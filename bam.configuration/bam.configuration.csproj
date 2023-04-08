@@ -10,7 +10,6 @@
     <Folder Include="Configuration\" />
     <Folder Include="CoreServices\ApplicationRegistration\" />
     <Folder Include="CoreServices\Auth\" />
-    <Folder Include="Data\" />
   </ItemGroup>
 
   <ItemGroup>
