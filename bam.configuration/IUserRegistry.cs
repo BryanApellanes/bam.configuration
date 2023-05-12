@@ -1,4 +1,5 @@
-﻿using Bam.Net.ServiceProxy;
+﻿using Bam.Net.CoreServices.ApplicationRegistration.Data;
+using Bam.Net.ServiceProxy;
 using System;
 
 namespace Bam.Net.CoreServices
