@@ -40,8 +40,8 @@ namespace Bam.Net.Configuration
 
         private static void LogWarnings(string applicationName, string configurationName)
         {
-            string configuredAppName = DefaultConfiguration.GetAppSetting("ApplicationName", "<unspecified />");
-            if (!applicationName.Equals(configuredAppName))
+            string configuredAppName = DefaultConfiguration.GetAppSetting("ApplicationName", string.Empty);
+            if (!string.IsNullOrEmpty(configuredAppName) && !applicationName.Equals(configuredAppName))
             {
                 Logging.Log.Warn("Specified application name ({0}) didn't match value in default config file: {1}", applicationName, configuredAppName);
             }
