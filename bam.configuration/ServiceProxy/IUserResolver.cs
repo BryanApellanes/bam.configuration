@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bam.Net.ServiceProxy
+namespace Bam.ServiceProxy
 {
     /// <summary>
     /// When implemented, determines who the current user is.
     /// </summary>
-    /// <seealso cref="Bam.Net.ServiceProxy.IRequiresHttpContext" />
+    /// <seealso cref="Bam.ServiceProxy.IRequiresHttpContext" />
     public interface IUserResolver: IRequiresHttpContext
     {
         string GetCurrentUser();

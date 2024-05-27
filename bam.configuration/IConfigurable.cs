@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bam.Net.Configuration
+namespace Bam.Configuration
 {
     /// <summary>
     /// When implemented allows configuration by applying a configuration or specifying a configurer.
     /// </summary>
-    /// <seealso cref="Bam.Net.Configuration.IHasRequiredProperties" />
+    /// <seealso cref="Bam.Configuration.IHasRequiredProperties" />
     public interface IConfigurable : IHasRequiredProperties
     {
         void Configure(IConfigurer configurer);

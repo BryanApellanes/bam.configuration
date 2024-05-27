@@ -7,14 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bam.Net.Configuration
+namespace Bam.Configuration
 {
     /// <summary>
     /// A base class providing methods for configuring 
     /// properties using an IConfigurer.
     /// </summary>
-    /// <seealso cref="Bam.Net.Configuration.IConfigurable" />
-    /// <seealso cref="Bam.Net.Configuration.IHasRequiredProperties" />
+    /// <seealso cref="Bam.Configuration.IConfigurable" />
+    /// <seealso cref="Bam.Configuration.IHasRequiredProperties" />
     public abstract class Configurable: IConfigurable, IHasRequiredProperties
     {
         /// <summary>

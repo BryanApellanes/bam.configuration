@@ -1,9 +1,9 @@
 ﻿/*
 	Copyright © Bryan Apellanes 2015  
 */
-using Bam.Net.CoreServices.ApplicationRegistration.Data;
+using Bam.CoreServices.ApplicationRegistration.Data;
 
-namespace Bam.Net.ServiceProxy.Encryption
+namespace Bam.ServiceProxy.Encryption
 {
     public interface IApiHmacKeyInfo
     {

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Bam.Net.Web
+namespace Bam.Web
 {
     public interface IHttpClientResponse
     {

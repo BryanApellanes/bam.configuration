@@ -1,17 +1,17 @@
 ﻿using Bam.Configuration.CoreServices;
-using Bam.Net.CoreServices;
-using Bam.Net.CoreServices.ApplicationRegistration.Data;
-//using Bam.Net.CoreServices.ApplicationRegistration.Data.Dao.Repository;
-using Bam.Net.CoreServices.Auth;
-using Bam.Net.Logging;
-using Bam.Net.ServiceProxy;
-using Bam.Net.ServiceProxy.Encryption;
-//using Bam.Net.UserAccounts;
+using Bam.CoreServices;
+using Bam.CoreServices.ApplicationRegistration.Data;
+//using Bam.CoreServices.ApplicationRegistration.Data.Dao.Repository;
+using Bam.CoreServices.Auth;
+using Bam.Logging;
+using Bam.ServiceProxy;
+using Bam.ServiceProxy.Encryption;
+//using Bam.UserAccounts;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Bam.Net.Services.Clients
+namespace Bam.Services.Clients
 {
     public interface ICoreClient
     {

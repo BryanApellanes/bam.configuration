@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Http;
 
-namespace Bam.Net.ServiceProxy
+namespace Bam.ServiceProxy
 {
     public class ServiceProxyInvocationRequestEventArgs: EventArgs
     {
         public ServiceProxyInvocationRequestEventArgs(IServiceProxyInvocationRequest serviceProxyInvokeRequest)
         {
             this.InvocationRequest = serviceProxyInvokeRequest;
-            this.Cuid = Bam.Net.Cuid.Generate();
+            this.Cuid = Bam.Cuid.Generate();
         }
 
         public IServiceProxyInvocationRequest InvocationRequest { get; set; }

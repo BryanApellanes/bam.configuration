@@ -1,10 +1,10 @@
-﻿using Bam.Net.Logging;
-using Bam.Net.Services.Clients;
+﻿using Bam.Logging;
+using Bam.Services.Clients;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Bam.Net.Configuration
+namespace Bam.Configuration
 {
     public class CompositeConfigurationProvider : Loggable, IConfigurationProvider
     {

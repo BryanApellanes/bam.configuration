@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Bam.Net.Configuration
+namespace Bam.Configuration
 {
     public class ConfigurationConflictEventArgs: EventArgs
     {

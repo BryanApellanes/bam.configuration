@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using System.Configuration;
 using System.Text;
 
-namespace Bam.Net.Configuration
+namespace Bam.Configuration
 {
     public partial class ConfigurationResolver
     {

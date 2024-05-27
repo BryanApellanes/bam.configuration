@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Bam.Net.ServiceProxy
+namespace Bam.ServiceProxy
 {
     public interface IServiceProxyInvocationRequest
     {

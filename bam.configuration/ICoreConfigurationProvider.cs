@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Bam.Net.Configuration;
+using Bam.Configuration;
 
-namespace Bam.Net.CoreServices
+namespace Bam.CoreServices
 {
     public interface ICoreConfigurationProvider: IConfigurationProvider
     {

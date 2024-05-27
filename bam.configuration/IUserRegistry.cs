@@ -1,8 +1,8 @@
-﻿using Bam.Net.CoreServices.ApplicationRegistration.Data;
-using Bam.Net.ServiceProxy;
+﻿using Bam.CoreServices.ApplicationRegistration.Data;
+using Bam.ServiceProxy;
 using System;
 
-namespace Bam.Net.CoreServices
+namespace Bam.CoreServices
 {
     public interface IUserRegistry
     {

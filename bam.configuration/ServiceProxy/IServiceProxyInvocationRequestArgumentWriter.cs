@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Reflection;
 
-namespace Bam.Net.ServiceProxy
+namespace Bam.ServiceProxy
 {
     public interface IServiceProxyInvocationRequestArgumentWriter
     {

@@ -1,4 +1,4 @@
-﻿namespace Bam.Net.CoreServices.Auth
+﻿namespace Bam.CoreServices.Auth
 {
     public interface IAuthProviderInfo
     {

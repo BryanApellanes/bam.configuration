@@ -1,4 +1,4 @@
-namespace Bam.Net.Configuration
+namespace Bam.Configuration
 {
     /// <summary>
     /// Resolves the application name from the environment variable named BAM_APPLICATION_NAME 

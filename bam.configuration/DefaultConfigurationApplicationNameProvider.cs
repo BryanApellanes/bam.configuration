@@ -6,9 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Bam.Net.Configuration;
+using Bam.Configuration;
 
-namespace Bam.Net.Configuration
+namespace Bam.Configuration
 {
     /// <summary>
     /// An ApplicationNameProvider that retrieves the ApplicationName

@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 using Newtonsoft.Json;
 using YamlDotNet.Serialization;
 
-namespace Bam.Net.Configuration
+namespace Bam.Configuration
 {
     public abstract class FilePersistable : IFilePersistable
     {
@@ -44,9 +44,9 @@ namespace Bam.Net.Configuration
             switch (Format)
             {
                 case SerializationFormat.Invalid:
-/*                case SerializationFormat.Yaml:
+                case SerializationFormat.Yaml:
                     this.ToYamlFile(filePath);
-                    break;*/
+                    break;
                 case SerializationFormat.Json:
                     this.ToJsonFile(filePath);
                     break;

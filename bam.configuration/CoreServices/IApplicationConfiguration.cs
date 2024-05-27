@@ -1,7 +1,7 @@
-﻿using Bam.Net.CoreServices.Configuration;
+﻿using Bam.CoreServices.Configuration;
 using System.Collections.Generic;
 
-namespace Bam.Net.CoreServices
+namespace Bam.CoreServices
 {
     public interface IApplicationConfiguration
     {

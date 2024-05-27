@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bam.Net.Configuration
+namespace Bam.Configuration
 {
     /// <summary>
     /// 
     /// </summary>
-    /// <seealso cref="Bam.Net.IOrganizationNameProvider" />
+    /// <seealso cref="Bam.IOrganizationNameProvider" />
     public class DefaultConfigurationOrganizationNameProvider : IOrganizationNameProvider
     {
         static IOrganizationNameProvider _instance;

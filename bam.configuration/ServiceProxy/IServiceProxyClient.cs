@@ -1,13 +1,13 @@
 ﻿/*
 	Copyright © Bryan Apellanes 2015  
 */
-using Bam.Net.Logging;
-using Bam.Net.Web;
+using Bam.Logging;
+using Bam.Web;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Bam.Net.ServiceProxy
+namespace Bam.ServiceProxy
 {
     public interface IServiceProxyClient
     {

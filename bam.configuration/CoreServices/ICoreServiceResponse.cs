@@ -1,4 +1,4 @@
-﻿namespace Bam.Net.CoreServices
+﻿namespace Bam.CoreServices
 {
     public interface ICoreServiceResponse
     {

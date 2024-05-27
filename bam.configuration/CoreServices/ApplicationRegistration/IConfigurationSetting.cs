@@ -1,4 +1,4 @@
-﻿namespace Bam.Net.CoreServices.ApplicationRegistration.Data
+﻿namespace Bam.CoreServices.ApplicationRegistration.Data
 {
     public interface IConfigurationSetting
     {

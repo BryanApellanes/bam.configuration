@@ -1,7 +1,7 @@
 using System;
-using Bam.Net.Data;
+using Bam.Data;
 
-namespace Bam.Net.Configuration
+namespace Bam.Configuration
 {
     // TODO: create an inheriting interface IYamlFilePersistable
     public interface IFilePersistable: IHasUniversalDeterministicId

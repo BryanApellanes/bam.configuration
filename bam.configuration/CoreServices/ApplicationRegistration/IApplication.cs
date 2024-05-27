@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Bam.Net.CoreServices.ApplicationRegistration.Data
+namespace Bam.CoreServices.ApplicationRegistration.Data
 {
     public interface IApplication
     {

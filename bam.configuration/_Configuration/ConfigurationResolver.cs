@@ -1,5 +1,5 @@
-﻿using Bam.Net.Logging;
-using Bam.Net.Services;
+﻿using Bam.Logging;
+using Bam.Services;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 
-namespace Bam.Net.Configuration
+namespace Bam.Configuration
 {
     public partial class ConfigurationResolver: Loggable
     {

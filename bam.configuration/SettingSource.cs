@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bam.Net.CoreServices.Configuration
+namespace Bam.CoreServices.Configuration
 {
     public enum SettingSource
     {
