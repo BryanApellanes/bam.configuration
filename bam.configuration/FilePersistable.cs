@@ -50,12 +50,9 @@ namespace Bam.Configuration
                 case SerializationFormat.Json:
                     this.ToJsonFile(filePath);
                     break;
-/*                case SerializationFormat.Xml:
+                case SerializationFormat.Xml:
                     this.ToXmlFile(filePath);
-                    break;*/
-        /*        case SerializationFormat.Binary:
-                    this.ToBinaryFile(filePath);
-                    break;*/
+                    break;
             }
         }
 
@@ -64,39 +61,32 @@ namespace Bam.Configuration
             switch (Format)
             {
                 case SerializationFormat.Invalid:
-/*                case SerializationFormat.Yaml:
+                case SerializationFormat.Yaml:
                     LoadYaml(type, filePath);
-                    break;*/
+                    break;
                 case SerializationFormat.Json:
                     LoadJson(type, filePath);
                     break;
-/*                case SerializationFormat.Xml:
+                case SerializationFormat.Xml:
                     LoadXml(type, filePath);
                     break;
-                case SerializationFormat.Binary:
-                    LoadBinary(type, filePath);
-                    break;*/
             }
         }
-/*        
+       
         public void LoadYaml(Type type, string filePath)
         {
-            this.CopyProperties(filePath.FromYamlFile(type));
-        }*/
+            this.CopyProperties(new FileInfo(filePath).FromYamlFile(type));
+        }
 
         public void LoadJson(Type type, string filePath)
         {
             this.CopyProperties(filePath.FromJsonFile(type));
         }
-/*
+
         public void LoadXml(Type type, string filePath)
         {
             this.CopyProperties(filePath.FromXmlFile(type));
         }
 
-        public void LoadBinary(Type type, string filePath)
-        {
-            this.CopyProperties(filePath.FromBinaryFile(type));
-        }*/
     }
 }
