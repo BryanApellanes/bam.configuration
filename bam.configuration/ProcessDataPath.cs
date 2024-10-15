@@ -6,7 +6,7 @@ public class ProcessDataPath : DataPath
 {
     static ProcessDataPath? _current;
     private static readonly object _currentLock = new object();
-    public static ProcessDataPath? Current
+    public static ProcessDataPath Current
     {
         get
         {
