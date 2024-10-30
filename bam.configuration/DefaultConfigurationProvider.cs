@@ -22,7 +22,7 @@ namespace Bam.Configuration
             return result;
         }
 
-        static object _serviceLock = new object();
+        static readonly object _serviceLock = new object();
         static DefaultConfigurationProvider _provider;
         public static DefaultConfigurationProvider Instance
         {
@@ -47,7 +47,7 @@ namespace Bam.Configuration
             }
             if (!string.IsNullOrEmpty(configurationName))
             {
-                Logging.Log.Warn("DefaultConfigurationService disregards confugrationName value: {0}", configurationName);
+                Logging.Log.Warn("DefaultConfigurationService disregards configurationName value: {0}", configurationName);
             }
         }
     }
