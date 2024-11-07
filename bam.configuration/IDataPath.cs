@@ -7,4 +7,5 @@ public interface IDataPath
     string ReadFile(string fileName, params string[] directorySegments);
     FileInfo WriteFile(string content, string fileName, params string[] directorySegments);
     string GetPath(string fileName, params string[] directorySegments);
+    string GetDirectory(params string[] directorySegments);
 }

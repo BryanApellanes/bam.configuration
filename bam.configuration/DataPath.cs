@@ -30,4 +30,16 @@ public abstract class DataPath : IDataPath
         parts.Add(fileName);
         return Path.Combine(parts.ToArray());
     }
+
+    /// <summary>
+    /// Gets the full path to the specified directory.
+    /// </summary>
+    /// <param name="directorySegments"></param>
+    /// <returns></returns>
+    public string GetDirectory(params string[] directorySegments)
+    {
+        List<string> parts = new List<string>(directorySegments);
+        parts.Insert(0, Value);
+        return Path.Combine(parts.ToArray());
+    }
 }
