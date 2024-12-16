@@ -8,6 +8,8 @@ using System.Configuration;
 using System.IO;
 using System.Reflection;
 using System.Text;
+using Bam.CoreServices.ApplicationRegistration.Data;
+using IConfiguration = Microsoft.Extensions.Configuration.IConfiguration;
 
 namespace Bam.Configuration
 {
