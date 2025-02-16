@@ -1,14 +1,7 @@
 ﻿using Bam.Logging;
 using Bam.Services;
-using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Configuration;
-using System.IO;
-using System.Reflection;
-using System.Text;
-using Bam.CoreServices.ApplicationRegistration.Data;
 using IConfiguration = Microsoft.Extensions.Configuration.IConfiguration;
 
 namespace Bam.Configuration

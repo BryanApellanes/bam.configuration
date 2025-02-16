@@ -1,5 +1,3 @@
-using System.Reflection;
-
 namespace Bam.Configuration;
 
 public class ProcessDataPath : DataPath

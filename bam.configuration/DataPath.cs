@@ -1,5 +1,3 @@
-using System.Data;
-
 namespace Bam.Configuration;
 
 public abstract class DataPath : IDataPath

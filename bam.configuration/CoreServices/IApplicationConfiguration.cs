@@ -1,5 +1,4 @@
 ﻿using Bam.CoreServices.Configuration;
-using System.Collections.Generic;
 
 namespace Bam.CoreServices
 {

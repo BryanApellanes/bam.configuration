@@ -1,8 +1,4 @@
 ﻿using Bam.Logging;
-using Bam.Services.Clients;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Bam.Configuration
 {

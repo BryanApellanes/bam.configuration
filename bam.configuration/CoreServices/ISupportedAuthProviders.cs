@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Bam.CoreServices.Auth
+﻿namespace Bam.CoreServices.Auth
 {
     public interface ISupportedAuthProviders
     {

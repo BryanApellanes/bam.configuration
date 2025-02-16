@@ -1,5 +1,3 @@
-using Bam;
-
 namespace Bam.Configuration;
 
 public class CurrentDirectoryDataPath : DataPath

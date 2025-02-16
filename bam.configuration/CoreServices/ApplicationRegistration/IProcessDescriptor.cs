@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Bam.CoreServices.ApplicationRegistration.Data
+﻿namespace Bam.CoreServices.ApplicationRegistration.Data
 {
     public interface IProcessDescriptor
     {

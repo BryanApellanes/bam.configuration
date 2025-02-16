@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Bam.Configuration
+﻿namespace Bam.Configuration
 {
     public class ConfigurationEventArgs: EventArgs
     {

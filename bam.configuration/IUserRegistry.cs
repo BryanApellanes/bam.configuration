@@ -1,6 +1,5 @@
 ﻿using Bam.CoreServices.ApplicationRegistration.Data;
 using Bam.ServiceProxy;
-using System;
 
 namespace Bam.CoreServices
 {

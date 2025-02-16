@@ -1,4 +1,3 @@
-using System;
 using Bam.Data;
 
 namespace Bam.Configuration

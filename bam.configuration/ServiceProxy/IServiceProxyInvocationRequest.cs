@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Bam.ServiceProxy
+﻿namespace Bam.ServiceProxy
 {
     public interface IServiceProxyInvocationRequest
     {

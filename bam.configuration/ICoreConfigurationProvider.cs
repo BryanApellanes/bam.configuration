@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Bam.Configuration;
+﻿using Bam.Configuration;
 
 namespace Bam.CoreServices
 {

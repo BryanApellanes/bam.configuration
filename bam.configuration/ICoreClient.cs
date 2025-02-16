@@ -7,9 +7,6 @@ using Bam.Logging;
 using Bam.ServiceProxy;
 using Bam.ServiceProxy.Encryption;
 //using Bam.UserAccounts;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 
 namespace Bam.Services.Clients
 {
