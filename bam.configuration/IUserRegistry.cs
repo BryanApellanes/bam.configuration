@@ -28,12 +28,12 @@ namespace Bam.CoreServices
 
         object Clone();
         IServiceProxyResponse ConfirmAccount(string token);
-        IServiceProxyResponse CreateEmail(string fromAddress = null, string fromDisplayName = null);
+        IServiceProxyResponse CreateEmail(string fromAddress = null!, string fromDisplayName = null!);
         IServiceProxyResponse ForgotPassword(string emailAddress);
         string GetCurrentUser();
         string[] GetRoles();
         string[] GetRoles(IUserResolver userResolver);
-        dynamic GetSmtpSettingsVault(string applicationName = null);
+        dynamic GetSmtpSettingsVault(string applicationName = null!);
         IUser GetUser(IHttpContext context);
         IServiceProxyResponse IsEmailInUse(string emailAddress);
         bool IsInRole(IUserResolver userResolver, string roleName);

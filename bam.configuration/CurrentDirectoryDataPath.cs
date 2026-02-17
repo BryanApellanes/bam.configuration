@@ -4,7 +4,7 @@ public class CurrentDirectoryDataPath : DataPath
 {
     public static CurrentDirectoryDataPath Current => new CurrentDirectoryDataPath();
 
-    private string _value;
+    private string _value = null!;
     public override string Value
     {
         get

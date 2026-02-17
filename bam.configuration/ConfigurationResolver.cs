@@ -3,7 +3,7 @@
     public partial class ConfigurationResolver
     {
         static object _currentLock = new object();
-        static ConfigurationResolver _current;
+        static ConfigurationResolver _current = null!;
         public static ConfigurationResolver Current
         {
             get

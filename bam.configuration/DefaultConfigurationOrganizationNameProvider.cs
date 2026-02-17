@@ -6,7 +6,7 @@
     /// <seealso cref="Bam.IOrganizationNameProvider" />
     public class DefaultConfigurationOrganizationNameProvider : IOrganizationNameProvider
     {
-        static IOrganizationNameProvider _instance;
+        static IOrganizationNameProvider _instance = null!;
         static object _lock = new object();
         public static IOrganizationNameProvider Instance
         {

@@ -57,9 +57,9 @@ namespace Bam.Services.Clients
         ILoginResponse Login(string userName, string passHash);
         IApplication RegisterApplication(string applicationName);
         ICoreServiceResponse RegisterClient();
-        void SaveProxyAssemblies(string directory = null);
-        void SaveProxySource(string directory = null);
+        void SaveProxyAssemblies(string directory = null!);
+        void SaveProxySource(string directory = null!);
         IApiHmacKeyInfo SetActiveApiKeyIndex(int index);
-        ISignUpResponse SignUp(string emailAddress, string password, string userName = null);
+        ISignUpResponse SignUp(string emailAddress, string password, string userName = null!);
     }
 }

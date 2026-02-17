@@ -10,7 +10,7 @@ namespace Bam.Configuration
             Dictionary<string, string> config = new Dictionary<string, string>();
             foreach(object key in environmentVariables.Keys)
             {
-                config.Add(key?.ToString(), environmentVariables[key]?.ToString());
+                config.Add(key?.ToString()!, environmentVariables[key!]?.ToString()!);
             }
             return config;
         }

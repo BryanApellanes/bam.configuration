@@ -14,24 +14,24 @@ namespace Bam.ServiceProxy
 
         public IServiceProxyInvocationRequest InvocationRequest { get; set; }
 
-        public IServiceProxyClient Client { get; set; }
+        public IServiceProxyClient Client { get; set; } = null!;
 
         /// <summary>
         /// Gets or sets the request message.
         /// </summary>
-        public HttpRequestMessage RequestMessage { get; set; }
+        public HttpRequestMessage RequestMessage { get; set; } = null!;
 
-        public HttpResponseMessage ResponseMessage { get; set; }
+        public HttpResponseMessage ResponseMessage { get; set; } = null!;
 
         /// <summary>
         /// Gets or sets the exception.
         /// </summary>
-        public Exception Exception { get; set; }
-        
+        public Exception Exception { get; set; } = null!;
+
         /// <summary>
         /// Gets or sets the message.
         /// </summary>
-        public string Message { get; set; }
+        public string Message { get; set; } = null!;
 
         /// <summary>
         /// Gets a value used to uniquely identify an invocation

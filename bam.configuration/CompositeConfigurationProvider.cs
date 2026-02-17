@@ -19,11 +19,11 @@ namespace Bam.Configuration
             get;
         }
 
-        public event EventHandler ConfigOverridden;
+        public event EventHandler ConfigOverridden = null!;
         public Dictionary<string, string> GetApplicationConfiguration(string applicationName, string configurationName = "")
         {
             Dictionary<string, string> config = new Dictionary<string, string>();
-            IConfigurationProvider current = null;
+            IConfigurationProvider current = null!;
             foreach(IConfigurationProvider configService in ConfigurationServices)
             {
                 Dictionary<string, string> currentConfig = configService.GetApplicationConfiguration(applicationName, configurationName);
@@ -31,7 +31,7 @@ namespace Bam.Configuration
                 {
                     if (config.ContainsKey(key))
                     {
-                        FireEvent(ConfigOverridden, new ConfigurationConflictEventArgs { Key = key, WinningValue = currentConfig[key], OverriddenValue = config[key], WinningConfigurationServiceType = configService.GetType(), OverriddenConfigurationServiceType = current?.GetType() });
+                        FireEvent(ConfigOverridden, new ConfigurationConflictEventArgs { Key = key, WinningValue = currentConfig[key], OverriddenValue = config[key], WinningConfigurationServiceType = configService.GetType(), OverriddenConfigurationServiceType = current?.GetType()! });
                     }
                 }
                 current = configService;

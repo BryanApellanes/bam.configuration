@@ -8,7 +8,7 @@ public class ProcessDataPath : DataPath
     {
         get
         {
-            return _currentLock.DoubleCheckLock(ref _current, () => new ProcessDataPath());
+            return _currentLock.DoubleCheckLock(ref _current, () => new ProcessDataPath())!;
         }
         set => _current = value;
     }

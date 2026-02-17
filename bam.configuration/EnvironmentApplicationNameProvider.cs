@@ -5,7 +5,7 @@ namespace Bam.Configuration
     /// </summary>
     public class EnvironmentApplicationNameProvider : IApplicationNameProvider
     {
-        static EnvironmentApplicationNameProvider _instance;
+        static EnvironmentApplicationNameProvider _instance = null!;
         public static EnvironmentApplicationNameProvider Instance
         {
             get { return _instance; }

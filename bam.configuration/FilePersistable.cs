@@ -31,7 +31,7 @@ namespace Bam.Configuration
             }
 
             ulong id = GetUniversalDeterministicId();
-            Args.ThrowIf<InvalidOperationException>(id <= 0, "Unable to get universal deterministic id for type {0}", currentType.FullName);
+            Args.ThrowIf<InvalidOperationException>(id <= 0, "Unable to get universal deterministic id for type {0}", currentType.FullName!);
             FileInfo file = Workspace.ForProcess().File($"{currentType.FullName}", $"{GetUniversalDeterministicId()}.{format.ToString().ToLowerInvariant()}");
             Save(file.FullName);
         }
@@ -72,7 +72,7 @@ namespace Bam.Configuration
        
         public void LoadYaml(Type type, string filePath)
         {
-            this.CopyProperties(new FileInfo(filePath).FromYamlFile(type));
+            this.CopyProperties(new FileInfo(filePath).FromYamlFile(type)!);
         }
 
         public void LoadJson(Type type, string filePath)

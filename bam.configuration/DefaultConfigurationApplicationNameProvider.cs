@@ -10,7 +10,7 @@ namespace Bam.Configuration
     /// </summary>
     public class DefaultConfigurationApplicationNameProvider: IApplicationNameProvider
     {
-        static IApplicationNameProvider _instance;
+        static IApplicationNameProvider _instance = null!;
         static object _lock = new object();
         public static IApplicationNameProvider Instance
         {

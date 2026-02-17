@@ -21,6 +21,6 @@ namespace Bam.ServiceProxy
         {
             get;
             set;
-        }
+        } = null!;
     }
 }

@@ -8,7 +8,7 @@ namespace Bam.Configuration
 {
     public partial class ConfigurationResolver: Loggable
     {
-        public ConfigurationResolver(ILogger logger = null)
+        public ConfigurationResolver(ILogger logger = null!)
         {
             DefaultConfiguration = ConfigurationManager.AppSettings;
             ConfigurationProvider = new DefaultConfigurationProvider();
@@ -16,9 +16,9 @@ namespace Bam.Configuration
             AppSettings = Config.AppSettings;
         }
 
-        public ConfigurationResolver(IConfiguration configuration, ILogger logger = null)
+        public ConfigurationResolver(IConfiguration configuration, ILogger logger = null!)
         {
-            Logger = logger ?? Log.Default;
+            Logger = logger ?? Log.Default!;
             NetCoreConfiguration = configuration;
             DefaultConfiguration = ConfigurationManager.AppSettings;
             Config = Config.Current;
@@ -29,29 +29,29 @@ namespace Bam.Configuration
         
         public Dictionary<string, string> AppSettings { get; }
 
-        public IConfiguration NetCoreConfiguration { get; set; }
+        public IConfiguration NetCoreConfiguration { get; set; } = null!;
         public NameValueCollection DefaultConfiguration { get; set; }
 
         [Inject]
-        public ILogger Logger { get; set; }
+        public ILogger Logger { get; set; } = null!;
 
         [Inject]
-        public IConfigurationProvider ConfigurationProvider { get; set; }
+        public IConfigurationProvider ConfigurationProvider { get; set; } = null!;
 
-        public ConfigurationValue this[string key, string defaultValue = null, bool callConfigService = false]
+        public ConfigurationValue this[string key, string defaultValue = null!, bool callConfigService = false]
         {
             get
             {
                 ConfigurationSources source = ConfigurationSources.NotFound;
 
-                string value = NetCoreConfiguration?[key];
+                string value = NetCoreConfiguration?[key]!;
                 if(!string.IsNullOrEmpty(value))
                 {
                     source = ConfigurationSources.NetCoreConfiguration;
                 }
                 else
                 {
-                    value = DefaultConfiguration[key];
+                    value = DefaultConfiguration[key]!;
                     source = ConfigurationSources.DefaultConfiguration;
                 }
 
@@ -63,7 +63,7 @@ namespace Bam.Configuration
 
                 if (string.IsNullOrEmpty(value))
                 {
-                    value = BamEnvironmentVariables.GetBamVariable(key);
+                    value = BamEnvironmentVariables.GetBamVariable(key)!;
                     source = ConfigurationSources.BamEnvironmentVariable;
                 }
 
@@ -86,11 +86,11 @@ namespace Bam.Configuration
 
                 if (!string.IsNullOrEmpty(value))
                 {
-                    Config.AppSettings.AddMissing(key, value);
+                    Config.AppSettings.TryAdd(key, value);
                     Config.Save();
                 }
 
-                return new ConfigurationValue(value)
+                return new ConfigurationValue(value!)
                 {
                     Key = key,
                     DefaultValue = defaultValue,
@@ -113,16 +113,16 @@ namespace Bam.Configuration
             }
         }
 
-        public event EventHandler CallingConfigService;
-        public event EventHandler CalledConfigService;
+        public event EventHandler CallingConfigService = null!;
+        public event EventHandler CalledConfigService = null!;
 
-        public event EventHandler RetrievingFromService;
-        public event EventHandler RetrievedFromCache;
-        public event EventHandler RetrievedFromService;
+        public event EventHandler RetrievingFromService = null!;
+        public event EventHandler RetrievedFromCache = null!;
+        public event EventHandler RetrievedFromService = null!;
 
-        public event EventHandler ConfigurationValueNotFound;
+        public event EventHandler ConfigurationValueNotFound = null!;
 
-        Dictionary<string, string> _config;
+        Dictionary<string, string> _config = null!;
         private string FromService(string key)
         {
             FireEvent(CallingConfigService, new ConfigurationEventArgs { Key = key });

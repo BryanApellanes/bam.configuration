@@ -14,6 +14,6 @@
         Type ServiceType { get; set; }
         ServiceProxyVerbs Verb { get; set; }
 
-        string GetInvocationUrl(bool includeQueryString = true, IServiceProxyClient serviceProxyClient = null);
+        string GetInvocationUrl(bool includeQueryString = true, IServiceProxyClient serviceProxyClient = null!);
     }
 }

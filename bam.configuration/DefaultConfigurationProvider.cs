@@ -12,13 +12,13 @@ namespace Bam.Configuration
 
             foreach (string key in appSettings.Keys)
             {
-                result.AddMissing(key, appSettings[key]);
+                result.TryAdd(key, appSettings[key]!);
             }
             return result;
         }
 
         static readonly object _serviceLock = new object();
-        static DefaultConfigurationProvider _provider;
+        static DefaultConfigurationProvider _provider = null!;
         public static DefaultConfigurationProvider Instance
         {
             get
